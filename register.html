@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple registration form</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="final.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      html, body {
+      height: 100%;
+      min-width: 1200px;
+      }
+      body{
+        background: url(https://img.freepik.com/free-vector/fast-food-black-background-poster_1284-14589.jpg?size=626&ext=jpg) no-repeat fixed center;
+        background-size: cover;
+      }
+      div, h1, form, input, p { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 16px;
+      color: orange;
+      }
+      h1 {
+      padding: 10px 0;
+      font-size: 32px;
+      font-weight: 300;
+      text-align: center;
+      }
+      p {
+      font-size: 12px;
+      }
+      hr {
+      color: #a9a9a9;
+      opacity: 0.3;
+      }
+      .main-block {
+      max-width: 340px; 
+      min-height: 460px; 
+      padding: 10px 0;
+      margin: auto;
+      border-radius: 5px; 
+      border: solid 1px #ccc;
+      box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+      background: #ebebebf3; 
+      }
+      form {
+      margin: 0 30px;
+      }
+      .account-type, .gender {
+      margin: 15px 0;
+      }
+      input[type=radio] {
+      display: none;
+      }
+      label#icon {
+      margin: 0;
+      border-radius: 5px 0 0 5px;
+      }
+      label.radio {
+      position: relative;
+      display: inline-block;
+      padding-top: 4px;
+      margin-right: 20px;
+      text-indent: 30px;
+      overflow: visible;
+      cursor: pointer;
+      }
+      label.radio:before {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: rgb(89, 48, 144);
+      }
+      label.radio:after {
+      content: "";
+      position: absolute;
+      width: 9px;
+      height: 4px;
+      top: 8px;
+      left: 4px;
+      border: 3px solid #fff;
+      border-top: none;
+      border-right: none;
+      transform: rotate(-45deg);
+      opacity: 0;
+      }
+      input[type=radio]:checked + label:after {
+      opacity: 1;
+      }
+      input[type=text], input[type=password] {
+      width: calc(100% - 57px);
+      height: 36px;
+      margin: 13px 0 0 -5px;
+      padding-left: 10px; 
+      border-radius: 0 5px 5px 0;
+      border: solid 1px #cbc9c9; 
+      box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+      background: #fff; 
+      }
+      input[type=password] {
+      margin-bottom: 15px;
+      }
+      #icon {
+      display: inline-block;
+      padding: 9.3px 15px;
+      box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+      background: rgb(89, 48, 144);
+      color: #fff;
+      text-align: center;
+      }
+      .btn-block {
+      margin-top: 10px;
+      text-align: center;
+      }
+      button {
+      width: 100%;
+      padding: 10px 0;
+      margin: 10px auto;
+      border-radius: 5px; 
+      border: none;
+      background:rgb(89, 48, 144); 
+      font-size: 14px;
+      font-weight: 600;
+      color: #fff;
+      }
+      button:hover {
+      background: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-sm orange bg-purple navbar-dark sticky-top forward">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#"></a>Saad Rajput Foods
+      
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+                            <a class="nav-link orange" href="index.html">
+                              <svg class="bi bi-house-door-fill mx-2" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.5 10.995V14.5a.5.5 0 01-.5.5H2a.5.5 0 01-.5-.5v-7a.5.5 0 01.146-.354l6-6a.5.5 0 01.708 0l6 6a.5.5 0 01.146.354v7a.5.5 0 01-.5.5h-4a.5.5 0 01-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"/>
+                                <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5z" clip-rule="evenodd"/>
+                              </svg>Home
+                              <span class="sr-only">(current)</span></a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link orange dropdown-toggle" href="product.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <svg class="bi bi-bag-fill mx-2" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 4h14v10a2 2 0 01-2 2H3a2 2 0 01-2-2V4zm7-2.5A2.5 2.5 0 005.5 4h-1a3.5 3.5 0 117 0h-1A2.5 2.5 0 008 1.5z"/></svg>Product
+                            </a>
+                            <div class="dropdown-menu bg-purple orange" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="#">Samosa</a>
+                              <a class="dropdown-item" href="#">Rolls</a>
+                              <a class="dropdown-item" href="#">Kababs</a>
+                              <a class="dropdown-item" href="#">Others</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link orange" href="#">
+                              <i class="fa fa-cutlery mx-2"></i>
+                                      Kitchen</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link orange" href="#">
+                              <i class="fa fa-phone mx-2"></i>Contact Us
+                              </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link orange" href="about.html">
+                              <svg class="bi bi-info-circle-fill mx-2" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M8 15A7 7 0 108 1a7 7 0 000 14zm0 1A8 8 0 108 0a8 8 0 000 16z" clip-rule="evenodd"/>
+                                <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z"/>
+                                <circle cx="8" cy="4.5" r="1"/>
+                              </svg>About
+                              </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link orange active" href="login.html">
+                              <i class="fa fa-user-circle-o mx-2"></i>Login/Register
+                              </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link orange" href="cart.html">
+                              <i class="fa fa-shopping-cart mx-2"></i>Cart
+                              </a>
+                          </li>
+            
+        </ul>
+      </div>
+      </nav>
+      <div class="topbar"></div>
+            <div class="botbar">
+                <nav aria-label="breadcrumb justify-content-center">
+                    <ol class="breadcrumb d-flex justify-content-center">
+                      <li class="breadcrumb-item"><a class="purple" href="final.html">Home</a></li>
+                      <li class="breadcrumb-item active purple" aria-current="page">About</li>
+                    </ol>
+                  </nav>
+            </div>
+  </header>
+    <div class="main-block mb-5">
+      <h1>Registration</h1>
+      <form action="/">
+        <hr>
+        <!-- <div class="account-type">
+          <input type="radio" value="none" id="radioOne" name="account" checked/>
+          <label for="radioOne" class="radio">Personal</label>
+          <input type="radio" value="none" id="radioTwo" name="account" />
+          <label for="radioTwo" class="radio">Company</label>
+        </div> -->
+        <hr>
+        <label id="icon" for="name"><i class="fas fa-envelope"></i></label>
+        <input type="text" name="name" id="name" placeholder="Enter Email Address" required/>
+        <label id="icon" for="name"><i class="fas fa-user"></i></label>
+        <input type="text" name="name" id="name" placeholder="Enter Name" required/>
+        <label id="icon" for="name"><i class="fas fa-unlock-alt"></i></label>
+        <input type="password" name="name" id="name" placeholder="Enter Password" required/>
+        <hr>
+        <div class="gender">
+          <input type="radio" value="none" id="male" name="gender" checked/>
+          <label for="male" class="radio">Male</label>
+          <input type="radio" value="none" id="female" name="gender" />
+          <label for="female" class="radio">Female</label>
+        </div>
+        <hr>
+        <div class="form-group form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" name="remember" required><p>I want to hear upcoming updates and notification.</p>
+            </label>
+          </div>
+        <hr>
+        <div class="btn-block">
+          <p>By clicking Register, you agree on our <a href="https://www.w3docs.com/privacy-policy">Privacy Policy for SAAD RAJPUT Foods.</a>.</p>
+          <button type="submit" href="/">Submit</button>
+        </div>
+      </form>
+    </div>
+    <footer>
+      <section class="footer">
+          <div class="mbr-overlay" style="background-color: rgb(70, 80, 82); opacity: 0.7;"></div>
+          <div class="container">
+              <div class="row">
+                  <a href="https://mobirise.com/">
+                      <img src="assets/images/logo2.png" alt="Saad Rajput Foods" media-simple="true">
+                  </a>
+              </div>
+              <div class="row">
+                  <div class="col">
+                      <h5 class="pb-3">
+                          Address
+                      </h5>
+                      <p class="mbr-text">
+                          1234 Street Name
+                          <br>City, AA 99999
+                      </p>
+                  </div>
+                  <div class="col">
+                      <h5 class="pb-3">
+                          Contacts
+                      </h5>
+                      <p class="mbr-text">
+                          Email: support@mobirise.com
+                          <br>Phone: +1 (0) 000 0000 001
+                          <br>Fax: +1 (0) 000 0000 002
+                      </p>
+                  </div>
+                  <div class="col">
+                      <h5 class="pb-3">
+                          Links
+                      </h5>
+                      <p class="mbr-text">
+                          <a class="text-white" href="https://mobirise.com/">Website builder</a>
+                          <br><a class="text-white" href="https://mobirise.com/mobirise-free-win.zip">Download for Windows</a>
+                          <br><a class="text-white" href="https://mobirise.com/mobirise-free-mac.zip">Download for Mac</a>
+                      </p>
+                  </div>
+              </div>
+          </div>
+          <div class="footer-lower">
+              <div class="row">
+                  <div class="col-sm-12">
+                      <hr>
+                  </div>
+              </div>
+              <div class="row mbr-white">
+                  <div class="col-sm-12 copyright text-center">
+                      <p class="mbr-text mbr-fonts-style display-7">
+                          © Copyright 2018 Free footer templates - All Rights Reserved
+                      </p>
+                  </div>
+                  <div class="col-md-12">
+                      <div class="social-list align-right d-flex flex-row justify-content-center">
+                          <div class="soc-item p-3">
+                              <a href="https://twitter.com/mobirise" target="_blank">
+                                  <span class="socicon-twitter socicon mbr-iconfont mbr-iconfont-social" media-simple="true"><i class="fa fa-twitter purple"></i></span>
+                              </a>
+                          </div>
+                          <div class="soc-item p-3">
+                              <a href="https://www.facebook.com/pages/Mobirise/1616226671953247" target="_blank">
+                                  <span class="socicon-facebook socicon mbr-iconfont mbr-iconfont-social" media-simple="true"><i class="fa fa-facebook purple"></i></span>
+                              </a>
+                          </div>
+                          <div class="soc-item p-3">
+                              <a href="https://www.youtube.com/c/mobirise" target="_blank">
+                                  <span class="socicon-youtube socicon mbr-iconfont mbr-iconfont-social" media-simple="true"><i class="fa fa-youtube purple"></i></span>
+                              </a>
+                          </div>
+                          <div class="soc-item p-3">
+                              <a href="https://instagram.com/mobirise" target="_blank">
+                                  <span class="socicon-instagram socicon mbr-iconfont mbr-iconfont-social" media-simple="true"><i class="fa fa-instagram purple"></i></span>
+                              </a>
+                          </div>
+                          <div class="soc-item p-3">
+                              <a href="https://plus.google.com/u/0/+Mobirise" target="_blank">
+                                  <span class="socicon-googleplus socicon mbr-iconfont mbr-iconfont-social" media-simple="true"><i class="fa fa-google purple"></i></span>
+                              </a>
+                          </div>
+                          <div class="soc-item p-3">
+                              <a href="https://www.behance.net/Mobirise" target="_blank">
+                                  <span class="socicon-behance socicon mbr-iconfont mbr-iconfont-social" media-simple="true"><i class="fa fa-behance purple"></i></span>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+    </footer>
+
+  </body>
+</html>
