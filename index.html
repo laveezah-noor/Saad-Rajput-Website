@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Saad Rajput Foods</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  
   
   <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <link href='https://fonts.googleapis.com/css?family=Charm' rel='stylesheet'>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="button.css">
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <!-- Title Icon -->
     <link rel="shortcut icon" type="image/png" href="your icon here">
-    
+    <title>Saad Rajput Foods</title>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
@@ -23,7 +26,7 @@
 
 <nav class="navbar navbar-expand-sm orange navbar-dark sticky-top forward">
   <!-- Brand -->
-  <a class="navbar-brand" href="#"></a>Saad Rajput Foods
+  <a class="navbar-brand orange font" href="#">Saad Rajput Foods</a>
 
 	<!-- Toggler/collapsibe Button -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -47,13 +50,13 @@
                           <path d="M1 4h14v10a2 2 0 01-2 2H3a2 2 0 01-2-2V4zm7-2.5A2.5 2.5 0 005.5 4h-1a3.5 3.5 0 117 0h-1A2.5 2.5 0 008 1.5z"/></svg>Product
                       </a>
                       <div class="dropdown-menu bg-purple" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Samosa</a>
-                        <a class="dropdown-item" href="#">Rolls</a>
-                        <a class="dropdown-item" href="#">Kababs</a>
-                        <a class="dropdown-item" href="#">Others</a>
-                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item orange" href="product.html">Samosa</a>
+                        <a class="dropdown-item orange" href="product.html">Rolls</a>
+                        <a class="dropdown-item orange" href="product.html">Kababs</a>
+                        <a class="dropdown-item orange" href="product.html">Others</a>
+                        <!-- <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Something else here</a>
-                      </div>
+                      </div> -->
                     </li>
                     <li class="nav-item">
                       <a class="nav-link orange" href="#">
@@ -203,9 +206,9 @@
   </div>
   <!--Controls-->
   <div class="controls-top">
-    <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
-    <a class="btn-floating" href="#multi-item-example" data-slide="next"><i
-        class="fa fa-chevron-right"></i></a>
+    <a class="btn-floating carousel-control-next-icon" style="float: left;" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left fa-5x"></i></a>
+    <a class="btn-floating carousel-control-next-icon" style="float: right;" href="#multi-item-example" data-slide="next"><i
+        class="fa fa-chevron-right fa-5x"></i></a>
   </div>
   <!--/.Controls-->
 
@@ -335,57 +338,14 @@
 
 </div>
 <!--/.Carousel Wrapper-->
-        <!-- <div class="products">
-            <div class="heading justify-content-center form-inline">
-              <img src="fire.png" alt="">
-              <h2>HOT PRODUCTS</h2>
-              <img src="fire.png" alt="">
-              <div class="container">
-                <div class="row">
-                  <div class="col-12 col-md-3">
-                    <div class="card">
-                      <img src="http://placehold.it/800x600/f44242/fff" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Product</h5>
-                        <p class="card-text">Price XXX</p>
-                        <a href="#" class="btn btn-danger">Add to Cart</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-3">
-                    <div class="card">
-                      <img src="http://placehold.it/800x600/f44242/fff" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title justify-content-center">Product</h5>
-                        <p class="card-text">Price XXX</p>
-                        <a href="#" class="bt n btn-danger">Add to Cart</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-3">
-                    <div class="card">
-                      <img src="http://placehold.it/800x600/f44242/fff" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Product</h5>
-                        <p class="card-text">Price XXX</p>
-                        <a href="#" class="btn btn-danger">Add to Cart</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-3">
-                    <div class="card">
-                      <img src="http://placehold.it/800x600/f44242/fff" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Product</h5>
-                        <p class="card-text">Price XXX</p>
-                        <a href="#" class="btn btn-danger">Add to Cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div> -->
-              <div class="mt-3 d-flex justify-content-center"><a href="#" class="btn btn-line orange"><h4>Show More</h4></a></div>
-            </div>
+              <div class="svg mt-3 d-flex justify-content-center">
+                <a class="button" href="#">
+                <svg>
+                    <rect height="40" width="130" fill="transparent" />
+                </svg>
+                <span style="font-weight: bolder; font-size: larger;">Show More</span>
+                </a>
+              </div>
           <!-- </div>
           <div> -->
             <!-- Catagories -->
@@ -397,7 +357,12 @@
                         <div class="categroy-panel-content">
                             <h2 class=" orange text-accent text-uppercase">Catering Kitchen</h2>
                               <p class="purple">Our Ready to Cook range carries a variety of popular chicken products from the desi Chicken Chapli Kabab to the kids favorite Chicken Jungle Fun Nuggets; All of which can be quickly cooked with a light splash of oil or air fried.</p>
-                              <a href="https://www.dawnfrozenfoods.com/lahore/all-products/ready-to-cook.html" class="btn btn-accent btn-lg">Shop Now</a>
+                              <div class="svg"><a class="button" href="#">
+                                <svg>
+                                    <rect height="40" width="130" fill="transparent" />
+                                </svg>
+                                <span style="font-size:1.25rem">Show Now</span>
+                                </a></div>
                           </div>
                       </div>
                       <!-- Grid Media -->
@@ -413,7 +378,12 @@
                         <div class="categroy-panel-content">
                             <h2 class="orange text-accent text-uppercase">Ready to Cook</h2>
                             <p class="purple">In our Ready to Eat range we offer the culturally popular Chicken Seekh Kabab and Chicken Malai Botti, which are easy to cook with just some time in a microwave are a quick fix for health delicious meal.</p>
-                            <a href="https://www.dawnfrozenfoods.com/lahore/all-products/ready-to-eat.html" class="btn btn-accent btn-lg">Shop Now</a>
+                            <div class="svg"><a class="button" href="#">
+                              <svg>
+                                  <rect height="40" width="130" fill="transparent" />
+                              </svg>
+                              <span style="font-size:1.25rem">Show Now</span>
+                              </a></div>
                           </div>
                         </div>
                         <!-- Grid Media -->
@@ -430,7 +400,12 @@
                                 <div class="categroy-panel-content">
                                   <h2 class="orange text-accent text-uppercase">Ready to Fry</h2>
                                   <p class="purple">Snacks which are tasty and carry a wide nutrient value; our Aloo Samosa and Vegetable samosa fit that crispy bill.</p>
-                                  <a href="https://www.dawnfrozenfoods.com/lahore/ready-to-cook/vegetable-products.html" class="btn btn-accent btn-lg">Shop Now</a>
+                                  <div class="svg"><a class="button" href="#">
+                                    <svg>
+                                        <rect height="40" width="130" fill="transparent" />
+                                    </svg>
+                                    <span style="font-size:1.25rem">Show Now</span>
+                                    </a></div>
                                 </div>
                               </div>
                               <!-- Grid Media -->
@@ -446,7 +421,12 @@
                               <div class="categroy-panel-content">
                                 <h2 class="orange text-accent text-uppercase">Season Specialities</h2>
                                 <p class="purple">Plain Paratha! Whole Wheat Paratha! Our universally loved paratha items complement our frozen products as well as many others products for any time of the day.</p>
-                                <a href="https://www.dawnfrozenfoods.com/lahore/ready-to-cook/parathas.html" class="btn btn-accent btn-lg">Shop Now</a>
+                                <div class="svg"><a class="button" href="#">
+                                  <svg>
+                                      <rect height="40" width="130" fill="transparent" />
+                                  </svg>
+                                  <span style="font-size:1.25rem">Show Now</span>
+                                  </a></div>
                               </div>
                             </div>
                             <!-- Grid Media -->
@@ -477,9 +457,14 @@
                                                           </div>
                                                       </div>
                                                       <div class="actions">
-                                                        <button class="action subscribe primary" title="Subscribe" type="submit">
-                                                          <span class="orange">Subscribe</span>
-                                                        </button>
+                                                        
+                                                          <div class="svg"><a class="button action subscribe" title="Subscribe" type="submit" href="#">
+                                                            <svg>
+                                                                <rect height="40" width="130" fill="transparent" />
+                                                            </svg>
+                                                            <span style="font-size:1.25rem">Subscribe</span>
+                                                            </a></div>
+                                                        
                                                       </div>
                                                   </form>
                                               </div>
@@ -494,11 +479,11 @@
                         
                       <footer>
                         <section class="footer">
-                            <div class="mbr-overlay" style="background-color: rgb(70, 80, 82); opacity: 0.7;"></div>
+                            <div class="mbr-overlay" style="background-color: rgba(112, 128, 131, 0.432); opacity: 0.7;"></div>
                             <div class="container">
                                 <div class="row">
-                                    <a href="https://mobirise.com/">
-                                        <img src="assets/images/logo2.png" alt="Saad Rajput Foods" media-simple="true">
+                                    <a class="font orange" href="#">
+                                        Saad Rajput Foods
                                     </a>
                                 </div>
                                 <div class="row">
@@ -507,8 +492,8 @@
                                             Address
                                         </h5>
                                         <p class="mbr-text">
-                                            1234 Street Name
-                                            <br>City, AA 99999
+                                            Block 3 A Gulistan-e-Johar,
+                                            <br>Karachi City, Sindh, Pakistan
                                         </p>
                                     </div>
                                     <div class="col">
@@ -517,8 +502,8 @@
                                         </h5>
                                         <p class="mbr-text">
                                             Email: support@mobirise.com
-                                            <br>Phone: +1 (0) 000 0000 001
-                                            <br>Fax: +1 (0) 000 0000 002
+                                            <br>Phone: +92 (321) 2040213
+                                            <br>Fax: +0 (0) 000 0000 000
                                         </p>
                                     </div>
                                     <div class="col">
@@ -526,9 +511,9 @@
                                             Links
                                         </h5>
                                         <p class="mbr-text">
-                                            <a class="text-white" href="https://mobirise.com/">Website builder</a>
-                                            <br><a class="text-white" href="https://mobirise.com/mobirise-free-win.zip">Download for Windows</a>
-                                            <br><a class="text-white" href="https://mobirise.com/mobirise-free-mac.zip">Download for Mac</a>
+                                            <a class="orange" href="about.html">About</a>
+                                            <br><a class="orange" href="product.html">Products</a>
+                                            <br><a class="orange" href="#">Kitchen</a>
                                         </p>
                                     </div>
                                 </div>
